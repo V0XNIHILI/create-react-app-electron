@@ -57,7 +57,7 @@
     "files": [
       "dist/",
       "node_modules/",
-      "app.html",
+      "public/index.html",
       "main.prod.js",
       "main.prod.js.map",
       "package.json"
@@ -130,7 +130,6 @@
     "electron",
     "boilerplate",
     "react",
-    "redux",
     "typescript",
     "ts",
     "sass",
@@ -191,11 +190,9 @@
     "@types/node": "^12",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.5",
-    "@types/react-redux": "^7.1.6",
     "@types/react-router": "^5.1.4",
     "@types/react-router-dom": "^5.1.3",
     "@types/react-test-renderer": "^16.9.2",
-    "@types/redux-logger": "^3.0.7",
     "@types/sinon": "^7.5.1",
     "@types/tapable": "^1.0.5",
     "@types/vfile-message": "^2.0.0",
@@ -238,7 +235,6 @@
     "eslint-plugin-testcafe": "^0.2.1",
     "fbjs-scripts": "^1.2.0",
     "file-loader": "^5.0.2",
-    "husky": "^4.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.1.0",
     "lint-staged": "^10.0.2",
@@ -248,7 +244,6 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prettier": "^1.19.1",
     "react-test-renderer": "^16.12.0",
-    "redux-logger": "^3.0.6",
     "rimraf": "^3.0.0",
     "sass-loader": "^8.0.2",
     "sinon": "^8.1.1",
@@ -272,9 +267,7 @@
     "yarn": "^1.21.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.12.1",
     "@hot-loader/react-dom": "^16.12.0",
-    "connected-react-router": "^6.6.1",
     "core-js": "^3.6.4",
     "devtron": "^1.4.0",
     "electron-debug": "^3.0.1",
@@ -284,11 +277,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-hot-loader": "^4.12.19",
-    "react-redux": "^7.1.3",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
-    "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0",
     "source-map-support": "^0.5.16"
   },
   "devEngines": {
@@ -318,10 +308,5 @@
   },
   "renovate": {
     "extends": ["bliss"]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
